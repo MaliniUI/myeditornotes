@@ -1,0 +1,18 @@
+Need help to get output for below two jsbridge function from console using debug binary.
+1st 
+window.jsBridge.execute('digipassEnrollmentStatus', [], function(err, jsonData) {                                                            
+               console.log("success",jsonData);
+               return jsonData;
+}) 
+ 
+
+2nd 
+var params = {
+               "unlockCode" : "147852",
+               "flag" : "false",
+               "challenge" : "1410134996" // or value which you get from api response
+}; 
+window.jsBridge.execute('callVascoGenerateOtpForTransactionSignOn', [], function(err, jsonData) {                                                                      
+               console.log("success", jsonData);
+               return jsonData;
+})
